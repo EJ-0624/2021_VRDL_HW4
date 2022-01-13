@@ -38,7 +38,7 @@ python spit_train_valid.py ## change your root
 ## Training
 
 ```setup
-python train.py --device 0 --batch-size 8 --img 640 640 --data hw2.yaml --cfg cfg/hw2.cfg --weights 'hw2.weights' --name hw2 --epoch 60 
+python main_train_pnsr.py --opt train_swinir_sr_vrdl.json
 ```
 
 ## Weight for Training Model
@@ -47,4 +47,20 @@ You can download the file here:
 
 - [The file of weight](https://drive.google.com/file/d/1Go2_ixu8RgZDY0FAF8x_qCNmLB78sGZW/view?usp=sharing)
 
-https://drive.google.com/drive/folders/16NrVpoWSmGRY2b0zTNnAWrmJYS-2YuPr?usp=sharing
+## Testing
+
+```setup
+python main_test_swinir.py --model_path  superresolution/swinir_sr_lightweight_x3/models/285000_G.pth --task lightweight_sr --scale 3 --folder_lq datasets/testing_lr_images 
+```
+
+## Testing Result
+
+![image](https://user-images.githubusercontent.com/68366624/149310592-1ea3eb32-4777-4154-865c-2fdd6cecf7cc.png)
+
+
+![image](https://user-images.githubusercontent.com/68366624/149310460-59120095-1cec-4182-82dc-971d0cc516c1.png)
+
+## Google Drive link
+
+This contains all the files that need to be used.
+- [Google Drive](https://drive.google.com/drive/folders/16NrVpoWSmGRY2b0zTNnAWrmJYS-2YuPr?usp=sharing)
