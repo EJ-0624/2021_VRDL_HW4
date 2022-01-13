@@ -26,6 +26,12 @@ To install requirements:
 pip install -r requirements.txt
 ```
 
+## Split train / valid sets
+
+```setup
+python spit_train_valid.py ## change your root
+```
+
 ## Train image
 
 https://drive.google.com/drive/folders/16NrVpoWSmGRY2b0zTNnAWrmJYS-2YuPr?usp=sharing
